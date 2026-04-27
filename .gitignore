@@ -4,3 +4,5 @@ NewGame.slnx
 /Temp
 *.csproj
 /UserSettings
+/ProjectSettings
+/Packages
