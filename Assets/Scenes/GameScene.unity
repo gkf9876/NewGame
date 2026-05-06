@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 428568630}
   - component: {fileID: 428568632}
   - component: {fileID: 428568631}
+  - component: {fileID: 428568633}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -432,6 +433,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &428568633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428568626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25915c3f43184a78afc9b653c1dd7a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoShooter
+  projectilePrefab: {fileID: 10357681776302779, guid: e92649f989a1a46d2b6c7bafa0339bf2, type: 3}
+  spawnPoint: {fileID: 428568629}
+  baseRotationReference: {fileID: 0}
+  fireInterval: 0.25
+  minTurnCooldown: 0.1
 --- !u!1 &1465884876
 GameObject:
   m_ObjectHideFlags: 0

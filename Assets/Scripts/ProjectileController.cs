@@ -184,8 +184,13 @@ public sealed class ProjectileController : MonoBehaviour
             spriteRenderer.flipX = moveDirection.x < -Mathf.Epsilon;
         }
 
-        float visualX = Mathf.Abs(moveDirection.x);
-        float angle = Mathf.Atan2(moveDirection.y, visualX) * Mathf.Rad2Deg;
+        bool flipLeft = moveDirection.x < -Mathf.Epsilon;
+        float angle = Mathf.Atan2(moveDirection.y, Mathf.Abs(moveDirection.x)) * Mathf.Rad2Deg;
+        if (flipLeft)
+        {
+            angle = -angle;
+        }
+
         transform.rotation = baseRotation * Quaternion.Euler(0f, 0f, angle);
     }
 
